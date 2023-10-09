@@ -1,0 +1,84 @@
+.bg-inverse {
+	background-color: rgba(51,51,51,1);
+}
+.col-md-6 p {
+	font-size: 16px;
+}
+.navbar {
+    position: relative;
+    padding: .5rem 1rem;
+	margin-bottom: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    cursor: pointer;
+	font-size: 1.2em;
+} 
+.navbar-nav li a {
+	color: #EEEEEE;
+}
+.navbar-nav li a:hover {
+	background-color: rgba(238,238,238,.1);
+}
+.hidden {
+	display: none;
+}
+.header h1 {
+	text-align: center;
+}
+.header p {
+	margin-bottom: 15px;
+	font-size: 21px;
+	font-weight: 200;
+}
+.registration {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jumbotron {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 80px;
+}
+footer {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heatMap .box{
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px; /* half of the width */
+    background-color:red;
+}
+
+.indexLevel ul{
+	padding: 0; list-style: none;
+}
+.indexLevel li{
+	padding: 5px;
+}
+.indexLevel li.aqi1{
+	background-color: #00ffbc;
+}
+.indexLevel li.aqi2{
+	background-color: #ffff00;
+}
+.indexLevel li.aqi3{
+	background-color: #ffb100;
+}
+.indexLevel li.aqi4{
+	background-color: #ff7300;
+}
+.indexLevel li.aqi5{
+	background-color: #ff0000;
+}

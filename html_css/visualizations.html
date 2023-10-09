@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Visualizations</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/custom.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.min.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+		  <ul class="nav navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="home_page.html">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="visualizations.html">Visuals <span class="sr-only">(current)</span></a>
+			</li>
+		  </ul>
+		</nav>				
+
+		<div class="container">
+			<div class="header">
+				<h1>Visualization Charts</h1>
+				<hr />
+				<p>
+					This page displays our three (3) main visuals.
+				</p>
+			</div>
+
+			<div id="heatMap">
+				<h3> HeatMap</h3>
+				<div class="box"></div>
+				<div id="map" style="height:500px;"></div>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+			</div>
+			<div id="barChart">
+				<h3> Bar Chart </h3>
+				<select name="chartScheduleSelect" id="chartScheduleSelect">
+					<option value="day">Day</option>
+  					<option value="month">Month</option>
+				</select>
+				<select name="chartSelect" id="chartSelect">
+					<option value="O3">o3</option>
+					<option value="CO">co</option>
+					<option value="NO">no</option>
+					<option value="NO2">no2</option>
+					<option value="SO2">so2</option>
+					<option value="pm2_5">pm2_5</option>
+					<option value="pm10">pm10</option>
+					<option value="NH3">nh3</option>
+				</select>
+				<div id='barChartPlot'></div>
+			</div>
+			<div id="lineGraph"> 
+				<h3> Line Graph </h3>
+				<select name="lineGraphSelect" id="lineGraphSelect">
+					<option value="O3">o3</option>
+					<option value="CO">co</option>
+					<option value="NO">no</option>
+					<option value="NO2">no2</option>
+					<option value="SO2">so2</option>
+					<option value="pm2_5">pm2_5</option>
+					<option value="pm10">pm10</option>
+					<option value="NH3">nh3</option>
+				</select>
+				<div id='lineGraphPlot'></div>
+			</div>
+			<div id="pieChart">
+				<h3>Pie Chart for Monthly Averages</h3>
+				<select id="monthSelect">
+				  <option value="2022-01">January 2022</option>
+				  <option value="2022-02">February 2022</option>
+				  <option value="2022-03">March 2022</option>
+				  <option value="2022-04">April 2022</option>
+				  <option value="2022-05">May 2022</option>
+				  <option value="2022-06">June 2022</option>
+				  <option value="2022-07">July 2022</option>
+				  <option value="2022-08">August 2022</option>
+				  <option value="2022-09">September 2022</option>
+				  <option value="2022-10">October 2022</option>
+				  <option value="2022-11">November 2022</option>
+				  <option value="2022-12">December 2022</option>
+				  <option value="2023-01">January 2023</option>
+				  <option value="2023-02">February 2023</option>
+				  <option value="2023-03">March 2023</option>
+				  <option value="2023-04">April 2023</option>
+				  <option value="2023-05">May 2023</option>
+				  <option value="2023-06">June 2023</option>
+				  <option value="2023-07">July 2023</option>
+				  <option value="2023-08">August 2023</option>
+				</select>
+			  </div>
+			  <div id="pieChartPlot"></div>
+		
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="./static/js/app.js"></script>
+		<script src="./static/js/bonus.js"></script>
+		<script src="./line_graph.js"></script>
+		<script src="./bar_pie_chart.js"></script>
+		<script src="./bar_pie_chartv2.js"></script>
+		<script src="./heatmap_slider.js"></script>
+	</body>
+</html>
